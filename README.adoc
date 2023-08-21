@@ -9,11 +9,12 @@ Setup dedicated repository for your ansible projects, which includes playbooks, 
 ----
 .
 ├── inventories
-│   ├── development
-│   ├── staging
-│   └── production
+│   ├── dev
+│   ├── stage
+│   └── produ
 ├── roles
 ├── playbooks
+├── templates
 └── ansible.cfg
 ----
 
