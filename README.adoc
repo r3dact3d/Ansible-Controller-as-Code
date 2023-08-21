@@ -1,0 +1,20 @@
+= AnsibleProject
+
+== Organize Your Repository
+
+Setup dedicated repository for your ansible projects, which includes playbooks, roles, and inventories. You might want to have a structure like this:
+
+.Directory Structure
+[source,shell]
+----
+.
+├── inventories
+│   ├── development
+│   ├── staging
+│   └── production
+├── roles
+├── playbooks
+└── ansible.cfg
+----
+
+This allows you to separate inventories for different environments, like development, staging, and production.
