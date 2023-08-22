@@ -4,3 +4,4 @@ collections:
     # If you need a specific version of the collection, you can specify like this:
     # version: ...
   - name: ansible.controller
+  - name: awx.awx
