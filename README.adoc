@@ -19,3 +19,16 @@ Setup dedicated repository for your ansible projects, which includes playbooks, 
 ----
 
 This allows you to separate inventories for different environments, like development, staging, and production.
+
+== Ansible Automation Platform
+
+link:https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.aap-product-demos.prod&utm_source=webapp&utm_medium=share-link[Red Hat AAP Sandbox]
+
+.Specifications
+* 1x Automation Controller on OCP4
+* 1x OpenShift4 Cluster
+* 1x RHEL8 Bastion Server w/ Anisble CLI tools
+* AWS Open Environment for provisioning of resources needed for the demo
+
+link:https://www.redhat.com/architect/ansible-automation-controller-cac-gitops[Config as Code - GitOps]
+

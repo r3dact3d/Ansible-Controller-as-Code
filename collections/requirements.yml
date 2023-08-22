@@ -3,4 +3,4 @@ collections:
   - name: infra.controller_configuration
     # If you need a specific version of the collection, you can specify like this:
     # version: ...
-  - name: awx.awx
+  - name: ansible.controller
