@@ -36,6 +36,12 @@
   roles:
     - infra.controller_configuration.filetree_create
 
+  tasks:
+    - name: display multiple file contents
+      ansible.builtin.debug: var=item
+      with_file:
+        - "/tmp/filetree_output/*"
+
   post_tasks:
     - name: "Delete the Authentication Token used"
       ansible.builtin.uri:
