@@ -1,7 +1,7 @@
 ---
 - name: filetree_create
   hosts: all
-  connection: local
+  #connection: local
   gather_facts: false
   vars:
     controller_username: "{{ vault_controller_username | default(lookup('env', 'CONTROLLER_USERNAME')) }}"
