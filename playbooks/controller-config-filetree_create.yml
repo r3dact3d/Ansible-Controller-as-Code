@@ -38,7 +38,8 @@
 
   tasks:
     - name: display multiple file contents
-      ansible.builtin.debug: var=item
+      ansible.builtin.debug:
+        msg: "{{lookup('ansible.builtin.file', '/tmp/filetree_output/*') }}"
       with_file:
         - "/tmp/filetree_output/*"
 
