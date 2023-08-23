@@ -5,9 +5,5 @@ controller_templates:
     inventory: Controllers
     project: Get Controller Stats
     playbook: playbooks/get_stats.yml
-    extra_vars:
-      controller_hostname: aap-aap.apps.cluster-pv6gs.pv6gs.sandbox1628.opentlc.com
-      controller_username: admin
-      controller_password: MTY4NzIy
 
 ...
