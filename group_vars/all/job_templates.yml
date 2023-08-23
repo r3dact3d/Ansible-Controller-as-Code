@@ -5,5 +5,9 @@ controller_templates:
     inventory: Controllers
     project: Get Controller Stats
     playbook: getControllerStats.yml
+    ask_variables_on_launch: true
+    extra_vars:
+      controller_hostname:
+      controller_password:
 
 ...
