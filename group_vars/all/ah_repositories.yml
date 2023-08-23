@@ -1,0 +1,16 @@
+---
+# Disabled for Workshop use, but can be used for other installations
+# ah_repository_certified:
+#   token: ""
+#   url: 'https://console.redhat.com/api/automation-hub/'
+#   auth_url: 'https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token'
+#   wait: true
+
+ah_repository_community:
+  requirements:
+    - infra.aap_utilities
+    - infra.ee_utilities
+    - containers.podman
+    - awx.awx
+  wait: true
+...

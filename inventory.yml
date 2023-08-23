@@ -1,0 +1,15 @@
+---
+all:
+  children:
+    automationcontroller:
+      hosts:
+        HOST_HERE:
+
+    automationhub:
+      hosts:
+        HOST_HERE:
+
+    builder:
+      hosts:
+        VSCODE_HOST:
+...
