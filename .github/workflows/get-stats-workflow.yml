@@ -1,0 +1,26 @@
+name: 'Get Stats Workflow'
+on:
+  workflow_dispatch:
+
+jobs:
+  Ansible:
+    name: 'Ansible'
+    runs-on: ubuntu-latest
+    environment: dev
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+
+      - name: Install Python Dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
+
+      - name: Run ansible playbook
+        run: |
+          ansible-galaxy collection install -r collections/requirements.yml
+          ansible-playbook playbooks/controller_config.yml \
+            -e "ansible_python_interpreter=`which python3`" \
+            -e "controller_password=${{ secrets.CONTROLLER_PASSWORD }}" \
