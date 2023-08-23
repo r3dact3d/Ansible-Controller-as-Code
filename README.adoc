@@ -31,4 +31,3 @@ link:https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.aa
 * AWS Open Environment for provisioning of resources needed for the demo
 
 link:https://www.redhat.com/architect/ansible-automation-controller-cac-gitops[Config as Code - GitOps]
-
