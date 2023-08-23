@@ -1,5 +1,5 @@
 ---
-- name: filetree_create
+- name: Filetree_create
   hosts: all
   connection: local
   gather_facts: false
@@ -11,6 +11,10 @@
 
   pre_tasks:
     - name: "Setup authentication (block)"
+      no_log: "{{ controller_configuration_filetree_create_secure_logging | default('false') }}"
+      when: controller_oauthtoken is not defined
+      tags:
+        - always
       block:
         - name: "Get the Authentication Token for the future requests"
           ansible.builtin.uri:
@@ -27,21 +31,9 @@
           ansible.builtin.set_fact:
             controller_oauthtoken: "{{ authtoken_res.json.token }}"
             controller_oauthtoken_url: "{{ authtoken_res.json.url }}"
-      no_log: "{{ controller_configuration_filetree_create_secure_logging | default('false') }}"
-      when: controller_oauthtoken is not defined
-      tags:
-        - always
-
 
   roles:
     - infra.controller_configuration.filetree_create
-
-  tasks:
-    - name: display multiple file contents
-      ansible.builtin.debug:
-        msg: "{{lookup('ansible.builtin.file', '/tmp/filetree_output/*') }}"
-      with_file:
-        - "/tmp/filetree_output/*"
 
   post_tasks:
     - name: "Delete the Authentication Token used"
