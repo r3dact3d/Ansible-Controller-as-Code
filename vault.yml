@@ -1,9 +1,0 @@
----
-vault_pass: 'r3dHat!'
-#machine_pass: 'password for root user on hub'
-controller_pass: 'MTY4NzIy'
-#ah_pass: 'hub admin account pass'
-controller_api_user_pass: 'MTY4NzIy'
-ah_token_password: 'MTY4NzIy'
-student_account: 'SvrVepDWjThA'
-...
