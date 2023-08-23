@@ -1,7 +1,7 @@
 ---
 controller_hostname: "{{ controller_host | default(groups['automationcontroller'][0]) }}"
 controller_username: "{{ controller_user | default('admin') }}"
-# controller_password: "{{ controller_pass }}"
+controller_password: "{{ controller_password }}"
 controller_validate_certs: false
 
 ...
