@@ -31,3 +31,22 @@ link:https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.aa
 * AWS Open Environment for provisioning of resources needed for the demo
 
 link:https://www.redhat.com/architect/ansible-automation-controller-cac-gitops[Config as Code - GitOps]
+
+== Workflow
+
+This repo currently offers a playbook that will configure controllers based on variables defined in group_vars.
+
+. Ensure inventory.yml has YOUR Ansible Controller defined
+. Create CONTROLLER_PASSWORD GitHub repository secret that is passed during workflow to run playbook agains inventory.yml
+. Click Deploy button below and run workflow
+
+image::https://github.com/r3dact3d/literate-doodle/actions/workflows/get-stats-workflow.yml/badge.svg[link="https://github.com/r3dact3d/literate-doodle/actions/workflows/get-stats-workflow.yml"]
+
+NOTE: You can now check the Actions to watch/check the status of the deployment.
+
+
+== Function
+
+This will create admin credential, and a project with template to get stats from the controller.
+
+    link:https://github.com/redhat-cop/controller_configuration.git
