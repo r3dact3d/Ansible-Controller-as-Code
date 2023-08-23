@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: Controllers
+    organization: Default
+    description: created by Ansible Config as Code
+...

@@ -1,5 +1,0 @@
----
-ah_groups:
-  - name: admin
-    state: present
-...
