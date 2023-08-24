@@ -1,0 +1,8 @@
+---
+controller_groups:
+  - name: automationcontroller
+    description: Group for controller nodes
+    inventory: Default
+    hosts:
+      - "{{ controller_hostname }}"
+...
