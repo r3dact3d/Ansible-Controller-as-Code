@@ -24,4 +24,5 @@ jobs:
           ansible-playbook controller_config.yml -i inventory.yml \
             -e "ansible_python_interpreter=`which python3`" \
             -e "controller_password=${{ secrets.CONTROLLER_PASSWORD }}" \
-            -e "github_cac_pat=${{ secrets.CAC_PAT }}"
+            -e "github_cac_pat=${{ secrets.CAC_PAT }}" \
+            $(for file in seed/*.yml; do echo -n "-e @$file "; done)
