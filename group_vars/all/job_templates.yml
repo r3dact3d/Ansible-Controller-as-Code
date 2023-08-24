@@ -9,5 +9,4 @@ controller_templates:
     extra_vars:
       controller_hostname:
       controller_password:
-
 ...

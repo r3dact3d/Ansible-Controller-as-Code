@@ -2,6 +2,7 @@
 controller_hostname: "{{ controller_host | default(groups['automationcontroller'][0]) }}"
 controller_username: "{{ controller_user | default('admin') }}"
 controller_password: "{{ controller_password }}"
+github_cac_pat: "{{ github_cac_pat }}"
 controller_validate_certs: false
 
 ...

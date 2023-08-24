@@ -1,0 +1,19 @@
+---
+controller_workflows:
+  - name: Ansible CaC Workflow
+    description: Ansible Controller as Code
+    extra_vars: ''
+    survey_enabled: false
+    allow_simultaneous: false
+    ask_variables_on_launch: false
+    inventory:
+    limit:
+    scm_branch:
+    ask_inventory_on_launch: false
+    ask_scm_branch_on_launch: false
+    ask_limit_on_launch: false
+    webhook_service: 'github'
+    webhook_credential: CaC_seed_pat
+    organization:
+      name: Default
+...
