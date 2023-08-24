@@ -1,4 +1,4 @@
-name: 'Get Stats Workflow'
+name: 'Seed CaC Workflow'
 on:
   workflow_dispatch:
 
@@ -24,3 +24,4 @@ jobs:
           ansible-playbook playbooks/controller_config.yml -i inventory.yml \
             -e "ansible_python_interpreter=`which python3`" \
             -e "controller_password=${{ secrets.CONTROLLER_PASSWORD }}" \
+            -e "github_cac_pat=${{ secrets.CAC_PAT }}"
