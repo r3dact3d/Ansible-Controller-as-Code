@@ -47,16 +47,20 @@ There are two parts:
 Before Seeding Controller as Code:
 
 . Ensure inventory.yml has YOUR Ansible Controller host(s) defined
-. Create a GitHub repository secret that is passed during workflow to run playbook agains inventory.yml
+. Create a GitHub repository secret that is passed during workflow
 .. name expected is CONTROLLER_PASSWORD
 .. secret should be the password used to login to the controller GUI
 . Create a GitHub Personal Access Token (PAT)
-. Create a GitHub repository secret for CAC_PAT with the PAT as the secret
+. Create a GitHub repository secret named CAC_PAT with the PAT as the secret
 . Click *Seed_CaC_Workflow* button below and run workflow
 
 image::https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/seed-cac-workflow.yml/badge.svg[link="https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/seed-cac-workflow.yml"]
 
 NOTE: You can now check the Actions to watch/check the status of the deployment.
+
+Completing the sync webhook
+. Manual task currently to get webhook url and token from the Job Template in the controller UI
+
 
 == Function
 
