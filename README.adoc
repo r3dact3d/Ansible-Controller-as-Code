@@ -23,6 +23,8 @@ This allows you to separate controller configurations for different environment 
 
 == Ansible Automation Platform
 
+This is just the specs for my lab and really the minimum requirements to highlight Ansible Controller as Code.
+
 link:https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.aap-product-demos.prod&utm_source=webapp&utm_medium=share-link[Red Hat AAP Sandbox]
 
 .Specifications
@@ -37,14 +39,14 @@ link:https://www.redhat.com/architect/ansible-automation-controller-cac-gitops[C
 
 This repo currently offers a playbook that will configure Ansible controllers based on variables defined in group_vars and/or seed directory.
 
-There are two parts:
+=== There are two parts:
 
 . Seed the required objects to support Controller as Code
 .. Located in the seed/directory are the configs to configure credential, project, and template to keep Controller as Code in sync
 . Continuous configuration as code
 .. Keeps Ansible controllers in sync with code via template webhook
 
-Before Seeding Controller as Code:
+=== Before Seeding Controller as Code:
 
 . Ensure inventory.yml has YOUR Ansible Controller host(s) defined
 . Create a GitHub repository secret that is passed during workflow
@@ -58,13 +60,13 @@ image::https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/
 
 NOTE: You can now check the Actions to watch/check the status of the deployment.
 
-Completing the sync webhook
+=== Completing the sync webhook
 
 . Manual task currently to get webhook url and token from the Job Template in the controller UI
 
 
 == Function
 
-This will create admin credential, and a project with template to get stats from the controller.
+This will create admin credential, and a project with template to get stats from the controller.  To highlight the syncing ability from Git to Controller.
 
     link:https://github.com/redhat-cop/controller_configuration.git
