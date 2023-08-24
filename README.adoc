@@ -59,6 +59,7 @@ image::https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/
 NOTE: You can now check the Actions to watch/check the status of the deployment.
 
 Completing the sync webhook
+
 . Manual task currently to get webhook url and token from the Job Template in the controller UI
 
 
