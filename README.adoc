@@ -8,18 +8,18 @@ Setup dedicated repository for your ansible projects, which includes playbooks, 
 [source,shell]
 ----
 .
-├── group_vars
-│   ├── all
-│   ├── org1
-│   ├── org2
-│   └── org3
-├── inventory.yml
-├── playbooks
+├── .github/workflows
 ├── collections
-└── ansible.cfg
+│   └── requirements.txt
+├── group_vars
+│   └── all
+├── seed
+│   └── *.yml
+├── inventory.yml
+└── controller_config.yml
 ----
 
-This allows you to separate controller configurations for different organizations, like development, networking, and security teams.
+This allows you to separate controller configurations for different environment life-cycles.
 
 == Ansible Automation Platform
 
@@ -35,16 +35,28 @@ link:https://www.redhat.com/architect/ansible-automation-controller-cac-gitops[C
 
 == Workflow
 
-This repo currently offers a playbook that will configure controllers based on variables defined in group_vars.
+This repo currently offers a playbook that will configure Ansible controllers based on variables defined in group_vars and/or seed directory.
 
-. Ensure inventory.yml has YOUR Ansible Controller defined
-. Create CONTROLLER_PASSWORD GitHub repository secret that is passed during workflow to run playbook agains inventory.yml
-. Click Deploy button below and run workflow
+There are two parts:
 
-image::https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/get-stats-workflow.yml/badge.svg[link="https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/get-stats-workflow.yml"]
+. Seed the required objects to support Controller as Code
+.. Located in the seed/directory are the configs to configure credential, project, and template to keep Controller as Code in sync
+. Continuous configuration as code
+.. Keeps Ansible controllers in sync with code via template webhook
+
+Before Seeding Controller as Code:
+
+. Ensure inventory.yml has YOUR Ansible Controller host(s) defined
+. Create a GitHub repository secret that is passed during workflow to run playbook agains inventory.yml
+.. name expected is CONTROLLER_PASSWORD
+.. secret should be the password used to login to the controller GUI
+. Create a GitHub Personal Access Token (PAT)
+. Create a GitHub repository secret for CAC_PAT with the PAT as the secret
+. Click *Seed_CaC_Workflow* button below and run workflow
+
+image::https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/seed-cac-workflow.yml/badge.svg[link="https://github.com/r3dact3d/Ansible-Controller-as-Code/actions/workflows/seed-cac-workflow.yml"]
 
 NOTE: You can now check the Actions to watch/check the status of the deployment.
-
 
 == Function
 
