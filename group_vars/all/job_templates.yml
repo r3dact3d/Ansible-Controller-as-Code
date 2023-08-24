@@ -11,14 +11,4 @@ controller_templates:
     extra_vars:
       controller_hostname:
       controller_password:
-
-  - name: Controller as Code JT
-    credentials:
-      - aap_admin
-    job_type: run
-    inventory: Controllers
-    project: Ansible Controller as Code
-    playbook: controller_config.yml
-    webhook_service: 'github'
-    webhook_credential: CaC_seed_pat
 ...

@@ -1,0 +1,11 @@
+---
+controller_projects:
+  - name: Ansible Controller as Code
+    organization: Default
+    scm_branch: dev
+    scm_clean: 'yes'
+    scm_delete_on_update: 'yes'
+    scm_type: git
+    scm_update_on_launch: 'yes'
+    scm_url: https://github.com/r3dact3d/Ansible-Controller-as-Code.git
+...
