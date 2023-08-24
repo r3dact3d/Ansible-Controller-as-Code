@@ -2,4 +2,6 @@
 controller_organizations:
   - name: Default
     description: This is the Default Group
+  - name: test org
+    description: testing webhook
 ...
