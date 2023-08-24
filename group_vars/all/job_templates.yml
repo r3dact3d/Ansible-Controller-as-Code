@@ -16,6 +16,7 @@ controller_templates:
     credentials:
       - aap_admin
     job_type: run
+    inventory: Controllers
     project: Ansible Controller as Code
     playbook: playbooks/controller_config.yml
     webhook_service: 'github'
