@@ -4,4 +4,6 @@ controller_organizations:
     description: This is the Default Group
   - name: Automation Group
     description: This is the Automation Group
+  - name: Test Group
+    description: This is the Automation Group
 ...
