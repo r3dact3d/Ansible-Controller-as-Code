@@ -5,10 +5,5 @@ controller_groups:
     inventory: Controllers
     hosts:
       - "{{ controller_hostname }}"
-  - name: dev
-    description: Group for dev environment
-    inventory: Controllers
-    hosts:
-      - "{{ controller_hostname }}"
 
 ...
