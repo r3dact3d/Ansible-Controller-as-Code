@@ -3,7 +3,7 @@ all:
   children:
     automationcontroller:
       hosts:
-        aap-aap.apps.cluster-wrvpg.wrvpg.sandbox93.opentlc.com:
+        aap-aap.apps.cluster-mw2j2.mw2j2.sandbox1803.opentlc.com:
 
 #    automationhub:
 #      hosts:
