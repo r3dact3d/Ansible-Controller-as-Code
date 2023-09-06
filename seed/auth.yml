@@ -1,5 +1,5 @@
 ---
-controller_hostname: "{{ controller_host | default(groups['automationcontroller'][0]) }}"
+controller_hostname: "{{ controller_host | default(groups['dev']['dev_controller']) }}"
 controller_username: "{{ controller_user | default('admin') }}"
 controller_validate_certs: false
 

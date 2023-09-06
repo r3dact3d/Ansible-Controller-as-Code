@@ -1,15 +1,54 @@
 ---
 all:
   children:
+    dev:
+      children:
+        dev_controller:
+          hosts:
+            aap-aap.apps.cluster-mw2j2.mw2j2.sandbox1803.opentlc.com:
+        dev_ahub:
+          hosts:
+            ahub_dev.opentlc.com:
+        dev_builder:
+          hosts:
+            builder_dev.opentlc.com:
+    stage:
+      children:
+        stage_ahub:
+          hosts:
+            ahub_stage.opentlc.com:
+        stage_controller:
+          hosts:
+            aap-aap_stage.opentlc.com:
+        stage_builder:
+          hosts:
+            builder_stage.opentlc.com:
+    prod:
+      children:
+        prod_controller:
+          hosts:
+            aap-aap_prod.opentlc.com:
+        prod_ahub:
+          hosts:
+            ahub_prod.opentlc.com:
+        prod_builder:
+          hosts:
+            builder_prod.opentlc.com:
     automationcontroller:
-      hosts:
-        aap-aap.apps.cluster-mw2j2.mw2j2.sandbox1803.opentlc.com:
+      children:
+        dev_controller:
+        stage_controller:
+        prod_controller:
+    automationhub:
+      children:
+        dev_ahub:
+        stage_ahub:
+        prod_ahub:
+    builder:
+      children:
+        dev_builder:
+        stage_builder:
 
-#    automationhub:
-#      hosts:
-#        HOST_HERE:
+        prod_builder:
 
-#    builder:
-#      hosts:
-#        VSCODE_HOST:
 ...
