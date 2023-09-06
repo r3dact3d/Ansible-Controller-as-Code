@@ -1,10 +1,5 @@
 ---
 controller_groups:
-  - name: automationcontroller
-    description: Group for controller nodes
-    inventory: Controllers
-    hosts:
-      - "{{ controller_hostname }}"
   - name: dev
     description: Group for dev environment
     inventory: Controllers
