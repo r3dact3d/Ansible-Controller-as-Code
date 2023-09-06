@@ -48,7 +48,6 @@ all:
       children:
         dev_builder:
         stage_builder:
-
         prod_builder:
 
 ...
