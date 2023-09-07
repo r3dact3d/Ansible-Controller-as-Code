@@ -12,7 +12,10 @@ Setup dedicated repository for your ansible projects, which includes playbooks, 
 ├── collections
 │   └── requirements.txt
 ├── group_vars
-│   └── all
+│   ├── all
+│   ├── dev
+│   ├── stage
+│   └── prod
 ├── seed
 │   └── *.yml
 ├── inventory.yml
