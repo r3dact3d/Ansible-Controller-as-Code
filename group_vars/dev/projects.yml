@@ -1,7 +1,7 @@
 ---
 controller_projects:
   - name: Get Controller Stats
-    organization: Default
+    organization: Dev
     scm_branch: main
     scm_clean: 'no'
     scm_delete_on_update: 'no'
