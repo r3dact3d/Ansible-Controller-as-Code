@@ -3,7 +3,7 @@ controller_templates:
   - name: Get Stats JT
     credentials:
       - aap_admin
-      - Master Creds
+      - "global test"
     job_type: run
     inventory: Localhost_inventory
     project: Get Controller Stats
