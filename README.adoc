@@ -75,4 +75,4 @@ This will create admin credential, and a project with template to get stats from
     link:https://github.com/redhat-cop/controller_configuration.git
 
 
-v1
+# v1
