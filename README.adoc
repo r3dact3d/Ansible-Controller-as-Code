@@ -73,3 +73,4 @@ NOTE: You can now check the Actions to watch/check the status of the deployment.
 This will create admin credential, and a project with template to get stats from the controller.  To highlight the syncing ability from Git to Controller.
 
     link:https://github.com/redhat-cop/controller_configuration.git
+#v1-2
