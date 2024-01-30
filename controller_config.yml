@@ -1,6 +1,6 @@
 ---
 - name: Playbook to configure ansible controller post installation
-  hosts: automationcontroller:&dev_controller
+  hosts: automationcontroller
 
   connection: local
   tasks:
