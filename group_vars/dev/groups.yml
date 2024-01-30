@@ -1,7 +1,7 @@
 ---
 controller_groups:
   - name: dev
-    description: Group for dev environment
+    description: Group for new dev environment
     inventory: dev_inventory
     hosts:
       - "{{ controller_hostname }}"

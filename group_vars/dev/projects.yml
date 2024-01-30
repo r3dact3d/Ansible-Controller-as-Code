@@ -1,6 +1,6 @@
 ---
 controller_projects:
-  - name: Get Controller Stats Test
+  - name: Get Controller Stats Dev
     organization: Dev
     scm_branch: main
     scm_clean: 'no'
