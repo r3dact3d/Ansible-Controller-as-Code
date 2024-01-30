@@ -21,7 +21,7 @@ jobs:
       - name: Run ansible playbook
         run: |
           ansible-galaxy collection install -r collections/requirements.yml
-          ansible-playbook controller_config.yml -i inventory.yml \
+          ansible-playbook controller_config.yml -i inventory.yml --limit 'dev_controller' \
             $(for file in seed/*.yml; do echo -n "-e @$file "; done)\
             -e "ansible_python_interpreter=`which python3`" \
             -e "controller_password=${{ secrets.CONTROLLER_PASSWORD }}" \
