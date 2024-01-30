@@ -5,7 +5,7 @@ controller_templates:
       - aap_admin
     job_type: run
     inventory: Localhost_inventory
-    project: Get Controller Stats
+    project: Get Controller Stats Dev
     playbook: getControllerStats.yml
     ask_variables_on_launch: true
     extra_vars:
