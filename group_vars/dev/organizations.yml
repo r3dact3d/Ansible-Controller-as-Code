@@ -10,6 +10,6 @@ controller_organizations:
       notification_templates_started: []
       notification_templates_success: []
       notification_templates_error:
-      - name: irc-satqe-chat-notification
-        notification_templates_approvals: []
+        - name: irc-satqe-chat-notification
+          notification_templates_approvals: []
 ...
