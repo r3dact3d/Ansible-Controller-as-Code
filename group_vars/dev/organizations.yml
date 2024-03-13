@@ -2,14 +2,4 @@
 controller_organizations:
   - name: Dev
     description: This is the Dev Group
-  - name: Satellite
-    description: Satellite
-    max_hosts: 0
-    custom_virtualenv:
-    related:
-      notification_templates_started: []
-      notification_templates_success: []
-      notification_templates_error:
-        - name: irc-satqe-chat-notification
-          notification_templates_approvals: []
 ...
