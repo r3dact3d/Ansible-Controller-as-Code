@@ -1,6 +1,7 @@
 ---
 controller_roles:
-  - users:
+  - user: spec_user
+    users:
       - dev_user1
       - dev_user2
     target_team: "DevOps"
@@ -10,7 +11,8 @@ controller_roles:
     roles:
       - execute
       - read
-  - users:
+  - user: spec_user
+    users:
       - net_user1
       - net_user2
     target_team: "NetOps"
@@ -20,7 +22,8 @@ controller_roles:
     roles:
       - execute
       - read
-  - users:
+  - user: spec_user
+    users:
       - sys_user1
       - sys_user2
     target_team: "SysOps"
