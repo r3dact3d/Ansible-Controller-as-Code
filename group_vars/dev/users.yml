@@ -2,29 +2,32 @@
 controller_user_accounts:
   - user: dev_user1
     email: dev_user1@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: dev_user2
     email: dev_user2@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: net_user1
     email: net_user1@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: net_user2
     email: net_user2@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: sys_user1
     email: sys_user1@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: sys_user2
     email: sys_user2@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: ops_user1
     email: ops_user1@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: ops_user2
     email: ops_user2@dev.com
-    passorganization: Dev
+    organization: Dev
   - user: rel_user1
     email: dev_user1@dev.com
-    passorganization: Dev
+    organization: Dev
+  - user: spec_user
+    email: spec_user@dev.com
+    organization: Dev
 ...
