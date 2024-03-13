@@ -1,33 +1,34 @@
 ---
 controller_roles:
-  - users: 
+  - users:
       - dev_user1
       - dev_user2
     target_team: "DevOps"
     role: member
   - team: "DevOps"
     organization: Dev
-    roles: 
+    roles:
       - execute
       - read
-  - users: 
+  - users:
       - net_user1
       - net_user2
     target_team: "NetOps"
     role: member
   - team: "NetOps"
     organization: Dev
-    roles: 
+    roles:
       - execute
       - read
-  - users: 
+  - users:
       - sys_user1
       - sys_user2
     target_team: "SysOps"
     role: member
   - team: "SysOps"
     organization: Dev
-    roles: 
+    roles:
       - execute
       - read
+      
 ...
