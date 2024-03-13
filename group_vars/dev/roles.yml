@@ -4,7 +4,7 @@ controller_roles:
     users:
       - dev_user1
       - dev_user2
-    target_team: "DevOps"
+    target_teams: "DevOps"
     role: member
   - team: "DevOps"
     organization: Dev
