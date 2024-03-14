@@ -4,7 +4,7 @@ controller_roles:
     users:
       - dev_user1
       - dev_user2
-    target_team: "DevOps"
+    target_teams: "DevOps"
     role: member
   - team: "DevOps"
     organization: Dev
@@ -15,7 +15,7 @@ controller_roles:
     users:
       - net_user1
       - net_user2
-    target_team: "NetOps"
+    target_teams: "NetOps"
     role: member
   - team: "NetOps"
     organization: Dev
@@ -26,7 +26,7 @@ controller_roles:
     users:
       - sys_user1
       - sys_user2
-    target_team: "SysOps"
+    target_teams: "SysOps"
     role: member
   - team: "SysOps"
     organization: Dev
