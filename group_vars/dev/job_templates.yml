@@ -11,16 +11,13 @@ controller_templates:
     extra_vars:
       controller_hostname:
       controller_password:
-
-
   - name: Install RHEL Packages
     credentials:
-      - machine-demo
+      - Workshop Credential
     job_type: run
     inventory: Workshop Inventory
     project: Ansible Plays for Dev
     playbook: ansiblePackages.yaml
-  
   - name: Dynamic Inventory
     credentials:
       - Workshop Credential
