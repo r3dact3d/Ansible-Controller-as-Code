@@ -11,13 +11,13 @@ controller_templates:
     extra_vars:
       controller_hostname:
       controller_password:
-  - name: Install RHEL Packages
+  - name: Copy SSH Key
     credentials:
       - Workshop Credential
     job_type: run
     inventory: Workshop Inventory
     project: Ansible Plays for Dev
-    playbook: ansiblePackages.yaml
+    playbook: copySSHKey.yml
   - name: Dynamic Inventory
     credentials:
       - Workshop Credential
