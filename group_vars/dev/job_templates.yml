@@ -25,5 +25,4 @@ controller_templates:
     inventory: Workshop Inventory
     project: Ansible Plays for Dev
     playbook: dynamicInventory.yml
-  
 ...
