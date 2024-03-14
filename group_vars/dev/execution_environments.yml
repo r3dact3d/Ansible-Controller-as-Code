@@ -1,0 +1,9 @@
+---
+controller_execution_environments:
+  - name: "brady-ee-rhel8"
+    image: quay.io/brthomps/brady-ee-rhel8
+  - name: "network-ee-base"
+    image: 	quay.io/brthomps/network-ee
+    organization: Dev
+...
+
