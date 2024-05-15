@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            aap-controller.vz5ks.sandbox196.opentlc.com:
+            23.96.62.111:
         dev_ahub:
           hosts:
             ahub_dev.opentlc.com:
