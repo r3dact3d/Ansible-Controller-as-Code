@@ -119,4 +119,3 @@
       ansible.builtin.include_role:
         name: infra.controller_configuration.roles
       when: controller_roles is defined
-...
