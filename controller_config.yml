@@ -28,7 +28,6 @@
       vars:
         controller_configuration_users_secure_logging: true
       when: controller_user_accounts is defined
-      addd
 
     - name: Include teams role
       ansible.builtin.include_role:
