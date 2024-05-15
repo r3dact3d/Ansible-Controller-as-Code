@@ -1,6 +1,6 @@
 ---
 controller_roles:
-  - users: 
+  - users:
       - spec_user
       - dev_user1
       - dev_user2
@@ -11,7 +11,7 @@ controller_roles:
     roles:
       - execute
       - read
-  - users: 
+  - users:
       - spec_user
       - net_user1
       - net_user2
@@ -22,7 +22,7 @@ controller_roles:
     roles:
       - execute
       - read
-  - users: 
+  - users:
       - spec_user
       - sys_user1
       - sys_user2
