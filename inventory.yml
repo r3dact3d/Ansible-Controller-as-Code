@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            aap-controller.z2gzl.sandbox2965.opentlc.com:
+            aap-controller.test.sandbox2965.opentlc.com:
         dev_ahub:
           hosts:
             ahub_dev.opentlc.com:
