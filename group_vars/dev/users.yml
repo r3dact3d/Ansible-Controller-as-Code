@@ -36,4 +36,7 @@ controller_user_accounts:
   - user: spec_user3
     email: spec_user3@dev.com
     organization: Dev
+  - user: spec_user4
+    email: spec_user4@dev.com
+    organization: Dev
 ...
