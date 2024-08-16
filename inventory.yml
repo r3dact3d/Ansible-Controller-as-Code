@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            aap-controller.bgh27.sandbox2699.opentlc.com:
+            aap-controller.kldtq.sandbox2415.opentlc.com:
         dev_ahub:
           hosts:
             ahub_dev.opentlc.com:

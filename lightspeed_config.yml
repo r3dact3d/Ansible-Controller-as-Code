@@ -1,0 +1,25 @@
+---
+- name: Playbook to highlight lightspeed capabilities
+  hosts: all
+
+  connection: local
+  tasks:
+
+    - name: Install MongoDB server
+      ansible.builtin.package:
+        name: mongodb-org
+        state: present
+
+    - name: Start and enable the service
+      ansible.builtin.service:
+        name: mongod
+        state: started
+        enabled: true
+
+    # Install firewall and open port for database
+    - name: Install firewall and open port for database
+      ansible.posix.firewalld:
+        port: 27017/tcp
+        permanent: true
+        state: enabled
+        immediate: true
