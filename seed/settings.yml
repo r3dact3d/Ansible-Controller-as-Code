@@ -3,5 +3,4 @@ controller_settings:
   settings:
     GALAXY_IGNORE_CERTS: true
     AWX_COLLECTIONS_ENABLED: true
-
 ...
