@@ -27,9 +27,6 @@ controller_user_accounts:
   - user: rel_user1
     email: dev_user1@dev.com
     organization: Dev
-  - user: spec_user
-    email: spec_user@dev.com
-    organization: Dev
   - user: spec_user2
     email: spec_user2@dev.com
     organization: Dev
