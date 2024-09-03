@@ -1,5 +1,5 @@
 ---
-controller_inventory_sources_all:
+controller_inventory_sources:
   - name: config_as_code_source
     organization: config_as_code
     source: scm

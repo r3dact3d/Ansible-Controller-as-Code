@@ -1,5 +1,5 @@
 ---
-controller_inventories_dev:
+controller_inventories:
   - name: dev_inventory
     organization: Dev
     description: created by Ansible Config as Code
