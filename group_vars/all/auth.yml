@@ -18,8 +18,8 @@ eda_username: "{{ eda_user | default('admin') }}"
 eda_validate_certs: false
 
 controller_password: "{{ controller_pass }}"
-ah_password: "{{ ah_pass }}"
+ah_password: "{{ controller_pass }}"
 ee_registry_password: "{{ ah_password }}"
-eda_password: "{{ eda_pass }}"
+eda_password: "{{ controller_pass }}"
 
 ...
