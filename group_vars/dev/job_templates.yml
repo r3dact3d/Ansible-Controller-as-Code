@@ -1,5 +1,5 @@
 ---
-controller_templates_dev:
+controller_templates:
   - name: Get Stats JT
     credentials:
       - aap_admin
