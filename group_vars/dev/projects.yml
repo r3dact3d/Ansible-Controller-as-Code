@@ -1,5 +1,5 @@
 ---
-controller_projects:
+controller_projects_dev:
   - name: Get Controller Stats Dev
     organization: Dev
     scm_branch: main

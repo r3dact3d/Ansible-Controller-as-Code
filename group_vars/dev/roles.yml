@@ -1,5 +1,5 @@
 ---
-controller_roles:
+controller_roles_dev:
   - users:
       - spec_user
       - dev_user1
