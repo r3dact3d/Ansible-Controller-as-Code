@@ -1,5 +1,5 @@
 ---
-controller_user_accounts:
+controller_user_accounts_dev:
   - user: dev_user1
     email: dev_user1@dev.com
     organization: Dev

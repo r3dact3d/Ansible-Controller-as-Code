@@ -1,5 +1,5 @@
 ---
-controller_teams:
+controller_teams_dev:
   - name: DevOps
     description: Development Operations Team
     organization: Dev
