@@ -17,7 +17,7 @@ eda_hostname: "{{ eda_host | default(groups['automationedacontroller'][0]) | def
 eda_username: "{{ eda_user | default('admin') }}"
 eda_validate_certs: false
 
-controller_password: "{{ controller_password }}"
+#controller_password: "{{ controller_password }}"
 ah_password: "{{ controller_password }}"
 ee_registry_password: "{{ ah_password }}"
 eda_password: "{{ controller_password }}"
