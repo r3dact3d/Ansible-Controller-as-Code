@@ -1,5 +1,5 @@
 ---
-controller_roles_all:
+controller_roles:
   - team: config_as_code_admin
     organization: config_as_code
     role: execute
