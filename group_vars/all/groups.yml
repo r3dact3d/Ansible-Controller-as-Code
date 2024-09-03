@@ -1,5 +1,5 @@
 ---
-controller_groups:
+controller_groups_all:
   - name: automationcontroller
     description: Group for controller nodes
     inventory: Controllers
@@ -10,5 +10,9 @@ controller_groups:
     inventory: Controllers
     hosts:
       - "{{ controller_hostname }}"
-
+#   - name: group1
+#     inventory: localhost
+#     variables:
+#       some_var: some_val
+#       ansible_connection: local
 ...
