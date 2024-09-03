@@ -1,6 +1,0 @@
----
-controller_hostname: "{{ controller_host | default(groups['dev_controller'][0]) }}"
-controller_username: "{{ controller_user | default('admin') }}"
-controller_validate_certs: false
-
-...

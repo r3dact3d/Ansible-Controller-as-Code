@@ -1,9 +1,0 @@
----
-controller_inventories:
-  - name: Localhost_inventory
-    organization: Default
-    description: created by Ansible Config as Code
-  - name: Controllers
-    organization: Default
-    description: created by Ansible Config as Code
-...

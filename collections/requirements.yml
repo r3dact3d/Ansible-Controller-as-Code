@@ -5,4 +5,5 @@ collections:
   - name: infra.ee_utilities
   - name: infra.aap_utilities
   - name: awx.awx
+  - name: infra.eda_configuration
 ...
