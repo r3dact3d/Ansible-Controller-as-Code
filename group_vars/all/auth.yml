@@ -22,4 +22,6 @@ ah_password: "{{ controller_password }}"
 ee_registry_password: "{{ ah_password }}"
 eda_password: "{{ controller_password }}"
 
+ah_token: "REPLACE ME"
+
 ...
