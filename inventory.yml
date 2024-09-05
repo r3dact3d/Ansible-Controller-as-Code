@@ -6,48 +6,9 @@ all:
         dev_controller:
           hosts:
             aap-aap.apps.cluster-mh6gf-1.dynamic.redhatworkshops.io:
-        dev_ahub:
-          hosts:
-            ahub_dev.opentlc.com:
-        dev_builder:
-          hosts:
-            builder_dev.opentlc.com:
-    stage:
-      children:
-        stage_ahub:
-          hosts:
-            ahub_stage.opentlc.com:
-        stage_controller:
-          hosts:
-            aap-aap_stage.opentlc.com:
-        stage_builder:
-          hosts:
-            builder_stage.opentlc.com:
-    prod:
-      children:
-        prod_controller:
-          hosts:
-            aap-aap_prod.opentlc.com:
-        prod_ahub:
-          hosts:
-            ahub_prod.opentlc.com:
-        prod_builder:
-          hosts:
-            builder_prod.opentlc.com:
+ 
+    
     automationcontroller:
       children:
         dev_controller:
-        stage_controller:
-        prod_controller:
-    automationhub:
-      children:
-        dev_ahub:
-        stage_ahub:
-        prod_ahub:
-    builder:
-      children:
-        dev_builder:
-        stage_builder:
-        prod_builder:
-
 ...
