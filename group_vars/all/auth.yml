@@ -29,30 +29,30 @@ ah_token: "REPLACE ME"
 # To generate an AH token, go to the url:
 # https://console.redhat.com/ansible/automation-hub/token and click on
 # "Load Token" in the "Offline token" chapter.
-cloud_token: ''
+cloud_token: "REPLACE ME"
 
 # This token use Red Hat's API to download AAP
 # Generate this token here: https://access.redhat.com/management/api
 # Keep in mind that the token will expire if it is not used for 30 days.
-offline_token: ''
+offline_token: "REPLACE ME"
 
 # Red Hat account login (this is used to attach your subs to controller)
-rh_username: ''
+rh_username: "REPLACE ME"
 
 # Red Hat account password
-rh_password: ''
+rh_password: "REPLACE ME"
 
 # The password for the root user on builder (using a non-root user would require
 # further changes)
-root_machine_pass: ''
+root_machine_pass: "REPLACE ME"
 
 # This is the password of the 'token_user' account that the playbook will create
 # in the private Automation Hub.
-ah_token_password: ''
+ah_token_password: "REPLACE ME"
 
 # This is the password of the 'api_user' user that the playbook will create
 # in the controller(s)
-controller_api_user_pass: ''
+controller_api_user_pass: "REPLACE ME"
 
 
 ...
