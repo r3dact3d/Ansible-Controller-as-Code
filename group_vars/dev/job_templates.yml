@@ -15,14 +15,14 @@ controller_templates:
     credentials:
       - Workshop Credential
     job_type: run
-    inventory: Workshop Inventory
+    inventory: dev_inventory
     project: Ansible Plays for Dev
     playbook: copySSHKey.yml
   - name: Dynamic Inventory
     credentials:
       - Workshop Credential
     job_type: run
-    inventory: Workshop Inventory
+    inventory: dev_inventory
     project: Ansible Plays for Dev
     playbook: dynamicInventory.yml
 ...
