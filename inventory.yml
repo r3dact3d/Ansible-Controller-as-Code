@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            aap-aap.apps.cluster-mh6gf-1.dynamic.redhatworkshops.io:
+            aap-aap.apps.cluster-nzbf7-1.dynamic.redhatworkshops.io:
  
     
     automationcontroller:
