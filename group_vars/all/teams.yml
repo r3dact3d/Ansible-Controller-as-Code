@@ -1,5 +1,0 @@
----
-controller_teams:
-  - name: config_as_code_admin
-    organization: config_as_code
-...

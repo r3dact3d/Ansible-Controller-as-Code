@@ -1,9 +1,5 @@
 ---
 controller_organizations:
-  - name: config_as_code
-
-  # default_environment: supported
-
-  # - name: Default
-  #   state: absent
+  - name: configascode
+    description: This is the configascode Group
 ...
