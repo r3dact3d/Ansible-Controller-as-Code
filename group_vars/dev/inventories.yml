@@ -3,5 +3,9 @@ controller_inventories:
   - name: dev_inventory
     organization: Dev
     description: created by Ansible Config as Code
-    
+  - name: Test Inventory - Constructed
+    organization: Default
+    description: created by Ansible Playbook
+    kind: constructed
+    host_filter:  "name__icontains=localhost"
 ...
