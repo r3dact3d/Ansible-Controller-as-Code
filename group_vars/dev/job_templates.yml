@@ -29,7 +29,7 @@ controller_templates:
     project: Config As Code
     job_type: run
     playbook: playbooks/controller_config.yml
-    inventory: dev_inventory
+    inventory: Demo Inventory
     execution_environment: Default execution environment
     concurrent_jobs_enabled: false
     ask_variables_on_launch: true
