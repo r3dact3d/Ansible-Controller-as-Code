@@ -1,5 +1,16 @@
 ---
 controller_projects:
+  - name: config_as_code
+    description: config as code project
+    organization: Default
+    scm_type: git
+    scm_url: https://github.com/r3dact3d/Ansible-Controller-as-Code.git
+    scm_branch: dev
+    scm_clean: true
+    scm_update_on_launch: false
+    scm_credential: ""
+    update_project: true
+    wait: true
   - name: Get Controller Stats Dev
     organization: Dev
     scm_branch: main
