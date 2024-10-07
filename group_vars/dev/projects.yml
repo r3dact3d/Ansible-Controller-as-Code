@@ -1,6 +1,6 @@
 ---
 controller_projects:
-  - name: config_as_code
+  - name: Config As Code
     description: config as code project
     organization: Default
     scm_type: git

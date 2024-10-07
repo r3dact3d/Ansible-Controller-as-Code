@@ -25,12 +25,12 @@ controller_templates:
     inventory: dev_inventory
     project: Ansible Plays for Dev
     playbook: dynamicInventory.yml
-  - name: controller_config
-    project: config_as_code
+  - name: Controller Config
+    project: Config As Code
     job_type: run
     playbook: playbooks/controller_config.yml
-    inventory: config_as_code
-    execution_environment: supported
+    inventory: dev_inventory
+    execution_environment: Default execution environment
     concurrent_jobs_enabled: false
     ask_variables_on_launch: true
     verbosity: 0
