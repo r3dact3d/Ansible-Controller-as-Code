@@ -1,5 +1,5 @@
 ---
-controller_projects:
+controller_projects_all:
   - name: config_as_code
     description: config as code project
     organization: Default
