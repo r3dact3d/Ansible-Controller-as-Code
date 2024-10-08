@@ -41,5 +41,11 @@ controller_templates:
     extra_vars:
       # for debugging errors with creds change to false
       controller_configuration_credentials_secure_logging: true
-
+  - name: Get Sys Data
+    credentials:
+      - aws-demo
+    job_type: run
+    inventory: dev_inventory
+    project: Ansible Use Cases
+    playbook: Dynamic Inventory in Ansible Automation Platform/get_sys_data.yml
 ...
