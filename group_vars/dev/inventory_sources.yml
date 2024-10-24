@@ -9,3 +9,12 @@ controller_inventory_sources:
     overwrite: true
     update_on_launch: true
     update_cache_timeout: 0
+  - name: Controller Source
+    source: scm
+    source_path: inventory.yml
+    source_project: Config As Code
+    inventory: Controller Inventory
+    description: created by Ansible controller
+    overwrite: true
+    update_on_launch: true
+    update_cache_timeout: 0
