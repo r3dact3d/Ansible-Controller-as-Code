@@ -5,7 +5,7 @@ all:
       children:
         dev_controller:
           hosts:
-            aap-controller.8k7fr.sandbox583.opentlc.com:
+            aap-aap.apps.cluster-gkndv-1.dynamic.redhatworkshops.io:
  
     
     automationcontroller:

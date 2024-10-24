@@ -48,5 +48,18 @@ controller_templates:
     inventory: dev_inventory
     project: Ansible Use Cases
     playbook: Dynamic Inventory in Ansible Automation Platform/get_sys_data.yml
-
+  - name: Provision AWS Infra
+    credentials:
+      - aws-demo
+    job_type: run
+    inventory: dev_inventory
+    project: Terraform Infra
+    playbook: terraform-playbook.yml
+  - name: RHEL Update
+    credentials:
+      - aws-demo
+    job_type: run
+    inventory: dev_inventory
+    project: Terraform Infra
+    playbook: rhel_update.yml
 ...
