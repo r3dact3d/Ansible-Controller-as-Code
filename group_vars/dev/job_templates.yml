@@ -42,22 +42,19 @@ controller_templates:
       # for debugging errors with creds change to false
       controller_configuration_credentials_secure_logging: true
   - name: Get Sys Data
-    credentials:
-      - aws-demo
+    credentials: []
     job_type: run
     inventory: dev_inventory
     project: Ansible Use Cases
     playbook: Dynamic Inventory in Ansible Automation Platform/get_sys_data.yml
-  - name: Provision AWS Infra
-    credentials:
-      - aws-demo
+  - name: Terraform Plan
+    credentials: []
     job_type: run
-    inventory: dev_inventory
-    project: Terraform Infra
-    playbook: terraform-playbook.yml
+    inventory: Controller Inventory
+    project: Urban Terraform
+    playbook: playbooks/tf_init_plan.yml
   - name: RHEL Update
-    credentials:
-      - aws-demo
+    credentials: []
     job_type: run
     inventory: dev_inventory
     project: Terraform Infra
