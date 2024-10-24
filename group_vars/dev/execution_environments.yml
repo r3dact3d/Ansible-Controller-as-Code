@@ -5,4 +5,7 @@ controller_execution_environments:
   - name: "network-ee-base"
     image: quay.io/brthomps/network-ee
     organization: Dev
+  - name: "terraform-ee-base"
+    organization: Default
+    image: index.docker.io/r3dact3d/terreform-ee
 ...
