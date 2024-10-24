@@ -1,6 +1,6 @@
 ---
 controller_groups:
-  - name: dev
+  - name: automationcontroller
     description: Group for new dev environment
     inventory: dev_inventory
     hosts:
