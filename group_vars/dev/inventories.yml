@@ -8,4 +8,7 @@ controller_inventories:
     description: created by Ansible Playbook
     kind: constructed
     host_filter:  "name__icontains=localhost"
+  - name: Controller Inventory
+    organization: Default
+    description: Inventory for Controller Config
 ...

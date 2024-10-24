@@ -19,7 +19,7 @@ controller_projects:
     scm_type: git
     scm_update_on_launch: 'no'
     scm_url: https://github.com/r3dact3d/ansiblePlays.git
-    - name: Blinker Project
+  - name: Blinker Project
     organization: Dev
     scm_branch: development
     scm_clean: 'no'
