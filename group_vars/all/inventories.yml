@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: Controller Inventory
+    organization: Default
+    description: Inventory for Controller Config
+...
