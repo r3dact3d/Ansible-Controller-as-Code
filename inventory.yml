@@ -11,4 +11,7 @@ all:
     automationcontroller:
       children:
         dev_controller:
-...
+    
+    linux:
+      children:
+        automationcontroller
