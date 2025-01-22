@@ -1,0 +1,9 @@
+---
+controller_templates:
+  - name: Get Stats JT
+    credentials:
+      - aap_admin
+    job_type: run
+    inventory: linux_inventory
+    project: Ansible Project
+    playbook: demo_project_setup.yml

@@ -1,0 +1,9 @@
+---
+controller_groups:
+  - name: linux
+    description: Group for new linux environment
+    inventory: linux_inventory
+    hosts:
+      - "{{ controller_hostname }}"
+
+...

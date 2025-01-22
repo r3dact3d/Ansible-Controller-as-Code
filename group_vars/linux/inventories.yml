@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: linux_inventory
+    organization: Linux
+    description: created by Ansible Config as Code
+...
