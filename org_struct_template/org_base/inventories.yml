@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: <org_name_lowercase>_inventory
+    organization: <org_name>
+    description: created by Ansible Config as Code
+...

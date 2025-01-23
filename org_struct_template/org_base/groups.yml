@@ -1,0 +1,9 @@
+---
+controller_groups:
+  - name: <org_name_lowercase>
+    description: Group for new <org_name_lowercase> environment
+    inventory: <org_name_lowercase>_inventory
+    hosts:
+      - "{{ controller_hostname }}"
+
+...
