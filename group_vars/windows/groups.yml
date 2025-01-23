@@ -1,0 +1,9 @@
+---
+controller_groups:
+  - name: windows
+    description: Group for new windows environment
+    inventory: windows_inventory
+    hosts:
+      - "{{ controller_hostname }}"
+
+...
