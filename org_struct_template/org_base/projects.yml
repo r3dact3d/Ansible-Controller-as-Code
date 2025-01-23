@@ -1,0 +1,11 @@
+---
+controller_projects:
+  - name: Ansible Project
+    description: config as code demo project
+    organization: <org_name>
+    scm_type: git
+    scm_url: https://github.com/r3dact3d/AnsibleProject.git
+    scm_branch: development
+    scm_clean: true
+    scm_update_on_launch: false
+    scm_credential: ""

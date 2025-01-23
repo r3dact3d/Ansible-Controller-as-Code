@@ -1,0 +1,5 @@
+---
+controller_organizations:
+  - name: <org_name>
+    description: This is the <org_name> Group
+...
