@@ -7,7 +7,7 @@ controller_projects:
     scm_url: https://github.com/r3dact3d/Ansible-Controller-as-Code.git
     scm_branch: dev
     scm_clean: true
-    scm_update_on_launch: false
+    scm_update_on_launch: true
     scm_credential: ""
     update_project: true
     wait: true
