@@ -4,6 +4,6 @@ controller_templates:
     credentials:
       - aap_admin
     job_type: run
-    inventory: windows_inventory
+    inventory: <org_name>_inventory
     project: Ansible Project
     playbook: demo_project_setup.yml
