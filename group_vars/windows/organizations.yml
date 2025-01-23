@@ -1,0 +1,5 @@
+---
+controller_organizations:
+  - name: Windows
+    description: This is the Windows Group
+...
