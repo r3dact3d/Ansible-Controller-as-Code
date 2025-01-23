@@ -1,6 +1,6 @@
 ---
 controller_projects:
-  - name: Ansible Project
+  - name: Windows Project
     description: config as code demo project
     organization: Windows
     scm_type: git
