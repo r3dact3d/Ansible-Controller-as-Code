@@ -25,22 +25,7 @@ controller_templates:
     inventory: dev_inventory
     project: Ansible Plays for Dev
     playbook: dynamicInventory.yml
-  - name: Controller Config
-    project: Config As Code
-    job_type: run
-    playbook: controller_config.yml
-    inventory: Demo Inventory
-    execution_environment: Default execution environment
-    concurrent_jobs_enabled: false
-    ask_variables_on_launch: true
-    verbosity: 0
-    webhook_service: 'github'
-    webhook_credential: CaC_seed_pat
-    credentials:
-      - aap_admin
-    extra_vars:
-      # for debugging errors with creds change to false
-      controller_configuration_credentials_secure_logging: true
+ 
   - name: Get Sys Data
     job_type: run
     inventory: dev_inventory
