@@ -5,5 +5,5 @@ controller_templates:
       - aap_admin
     job_type: run
     inventory: windows_inventory
-    project: Ansible Project
+    project: Windows Project
     playbook: demo_project_setup.yml

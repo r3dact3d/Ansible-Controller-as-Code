@@ -1,6 +1,6 @@
 ---
 controller_inventories:
-  - name: windows_inventory
-    organization: Windows
+  - name: <org_name>_inventory
+    organization: <org_name>
     description: created by Ansible Config as Code
 ...

@@ -2,7 +2,7 @@
 controller_projects:
   - name: Ansible Project
     description: config as code demo project
-    organization: Windows
+    organization: <org_name>
     scm_type: git
     scm_url: https://github.com/r3dact3d/AnsibleProject.git
     scm_branch: development

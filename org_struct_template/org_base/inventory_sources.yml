@@ -1,10 +1,10 @@
 ---
 controller_inventory_sources:
-  - name: Windows Source
+  - name: <org_name> Source
     source: scm
     source_path: inventories/static/demo.yml
     source_project: Ansible Project
-    inventory: windows_inventory
+    inventory: <org_name>_inventory
     description: created by Ansible controller
     overwrite: true
     update_on_launch: true

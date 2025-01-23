@@ -1,8 +1,8 @@
 ---
 controller_groups:
-  - name: windows
-    description: Group for new windows environment
-    inventory: windows_inventory
+  - name: <org_name>
+    description: Group for new <org_name> environment
+    inventory: <org_name>_inventory
     hosts:
       - "{{ controller_hostname }}"
 
