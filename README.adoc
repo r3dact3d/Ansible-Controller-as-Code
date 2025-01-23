@@ -74,3 +74,9 @@ This will create admin credential, and a project with template to get stats from
 
     link:https://github.com/redhat-cop/controller_configuration.git
 #v1-2
+
+## Group On-boarding Process
+
+1. update inventory to add new org group
+2. create group_var that reps the new org
+3. Update repo with push to trigger webhook

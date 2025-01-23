@@ -15,3 +15,7 @@ all:
     linux:
       children:
         automationcontroller
+
+    windows:
+      children:
+        automationcontroller
